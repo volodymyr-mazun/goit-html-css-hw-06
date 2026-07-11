@@ -1,23 +1,24 @@
-# GOIT HTML/CSS Homework 05
+# GOIT HTML/CSS Homework 06
 
-Module 5. Forms and Accessibility
+Module 6. Responsive Web Design
 
 ## Topics Covered
 
-- HTML forms
-- Input elements
-- Textarea and select elements
-- Form labels and attributes
-- Radio buttons and checkboxes
-- Modal window
-- Form styling
-- Focus and hover states
+- Responsive web pages
+- Media queries
+- Logical operators in media queries
+- Mobile First approach
+- Responsive images
+- Adaptive page layout
+- Breakpoints for different screen sizes
+- Flexible containers and content
 
 ## Technologies
 
 - HTML5
 - CSS3
-- SVG
+- Responsive Web Design
+- Media Queries
 
 ## Author
 
