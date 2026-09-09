@@ -73,7 +73,6 @@ button {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0 16px;
     }
 }
 
@@ -120,14 +119,14 @@ button {
     margin-right: 76px;
 }
 
-.nav-list {
+.header-nav-list {
     display: flex;
     gap: 40px;
 }
 
-.nav-item {}
+.header-nav-item {}
 
-.nav-link {
+.header-nav-link {
     position: relative;
 
     display: block;
@@ -142,16 +141,16 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
     color: #404bbf;
 }
 
-.nav-link.current {
+.header-nav-link.current {
     color: #404bbf;
 }
 
-.nav-link.current::after {
+.header-nav-link.current::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -164,19 +163,18 @@ button {
     border-radius: 2px;
 }
 
-.contacts {
+.header-contacts {
     margin-left: auto;
 }
 
-.contacts-list {
+.header-contacts-list {
     display: flex;
     gap: 40px;
 }
 
-.contacts-item {
-}
+.header-contacts-item {}
 
-.contacts-link {
+.header-contacts-link {
     display: block;
     padding: 24px 0;
 
@@ -189,8 +187,8 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
     color: #404bbf;
 }
 
@@ -200,8 +198,8 @@ button {
     margin: 0 auto;
 
     background-color: #2e2f42;
-    background-image: 
-        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    background-image:
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero/people-office.webp);
     background-size: cover;
     background-position: center;
@@ -252,8 +250,7 @@ button {
     padding: 120px 0;
 }
 
-.benefits-title {
-}
+.benefits-title {}
 
 .benefits-list {
     display: flex;
@@ -326,9 +323,9 @@ button {
 
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-    box-shadow: 
-        0 2px 1px 0 rgba(46, 47, 66, 0.08), 
-        0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    box-shadow:
+        0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -443,7 +440,7 @@ button {
     padding: 40px 32px;
 
     background-color: #4d5ae5;
-    
+
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
@@ -501,7 +498,7 @@ button {
     color: #f4f4fd;
 }
 
-.footer-text {
+.footer-description-text {
     max-width: 264px;
 
     line-height: 1.5;
@@ -543,7 +540,7 @@ button {
 
     background-color: #4d5ae5;
     border-radius: 50%;
-    
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -556,8 +553,7 @@ button {
     fill: #f4f4fd;
 }
 
-.footer-subscribe-container {
-}
+.footer-subscribe-container {}
 
 .footer-subscribe-text {
     margin-bottom: 16px;
@@ -574,8 +570,7 @@ button {
     gap: 24px;
 }
 
-.footer-subscribe-label {
-}
+.footer-subscribe-label {}
 
 .footer-subscribe-input {
     width: 264px;
@@ -653,13 +648,13 @@ button {
     align-items: center;
 
     background-color: rgba(46, 47, 66, 0.4);
-    
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -698,7 +693,7 @@ button {
     border-radius: 50%;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
@@ -745,7 +740,7 @@ button {
     color: #8e8f99;
 }
 
-.modal-input-wrap {
+.modal-input-wrapper {
     position: relative;
 }
 
@@ -772,18 +767,18 @@ button {
     position: absolute;
     top: 50%;
     left: 16px;
-        
+
     fill: #2e2f42;
 
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus+.modal-input-icon {
     fill: #4d5ae5;
 }
 
-.modal-comment-field {
+.modal-textarea-field {
     margin-bottom: 16px;
 }
 
@@ -817,7 +812,7 @@ button {
     color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-checkbox-wrap {
+.modal-checkbox-wrapper {
     margin-bottom: 24px;
 }
 
@@ -850,7 +845,7 @@ button {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-custom {
+.modal-checkbox:checked+.modal-checkbox-label .modal-checkbox-custom {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
