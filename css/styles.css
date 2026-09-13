@@ -87,10 +87,14 @@ button {
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+                0 1px 1px 0 rgba(46, 47, 66, 0.16),
+                0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -115,16 +119,13 @@ button {
 
 .header-logo {
     display: block;
-    padding: 24px 0;
-    margin-right: 76px;
+    padding: 16px 0;
 }
 
-.header-nav-list {
-    display: flex;
-    gap: 40px;
+.header-nav-list,
+.header-contacts {
+    display: none;
 }
-
-.header-nav-item {}
 
 .header-nav-link {
     position: relative;
@@ -142,7 +143,9 @@ button {
 }
 
 .header-nav-link:hover,
-.header-nav-link:focus {
+.header-nav-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
     color: #404bbf;
 }
 
@@ -163,16 +166,10 @@ button {
     border-radius: 2px;
 }
 
-.header-contacts {
-    margin-left: auto;
-}
-
 .header-contacts-list {
     display: flex;
     gap: 40px;
 }
-
-.header-contacts-item {}
 
 .header-contacts-link {
     display: block;
@@ -187,9 +184,76 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-    color: #404bbf;
+.header-menu-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.header-menu-icon {
+    display: block;
+    fill: #2f2f37;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-button:hover .header-menu-icon,
+.header-menu-button:focus .header-menu-icon {
+    fill: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .header-logo {
+        padding: 24px 0;
+        margin-right: 120px;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-contacts {
+        display: block;
+        margin-left: auto;
+    }
+
+    .header-contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-contacts-link {
+        padding: 0;
+
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
+    .header-menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .header-contacts-list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .header-contacts-link {
+        padding: 24px 0;
+
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }
 
 /* ========== HERO SECTION ========== */
